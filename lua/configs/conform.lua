@@ -6,7 +6,7 @@ local options = {
     javascript = { "prettier" },
     c = { "clang-format" },
     cpp = { "clang-format" },
-    python = { "autopep8" },
+    python = { "black" },
   },
 
   format_on_save = {

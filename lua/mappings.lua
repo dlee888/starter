@@ -16,4 +16,4 @@ cmp.setup {
   },
 }
 
--- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
+vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })
