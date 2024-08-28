@@ -7,6 +7,8 @@ local options = {
     c = { "clang-format" },
     cpp = { "clang-format" },
     python = { "black" },
+    tex = { "latexindent" },
+    sh = { "shfmt" },
   },
 
   format_on_save = {
