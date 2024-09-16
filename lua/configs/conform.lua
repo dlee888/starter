@@ -9,6 +9,7 @@ local options = {
     python = { "black" },
     tex = { "latexindent" },
     sh = { "shfmt" },
+    sv = { "verible-verilog-format" },
   },
 
   format_on_save = {
