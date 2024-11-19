@@ -14,10 +14,6 @@ return {
   },
 
   {
-    "williamboman/mason.nvim",
-  },
-  --
-  {
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = {
@@ -41,6 +37,9 @@ return {
   {
     "lervag/vimtex",
     lazy = false,
+    init = function()
+      vim.g.vimtex_view_method = "zathura"
+    end,
   },
 
   {

@@ -21,6 +21,14 @@ require("lazy").setup({
     branch = "v2.5",
     import = "nvchad.plugins",
   },
+  {
+    "williamboman/mason.nvim",
+    lazy = false,
+  },
+  {
+    "williamboman/mason-lspconfig.nvim",
+    lazy = false,
+  },
 
   { import = "plugins" },
 }, lazy_config)
@@ -35,6 +43,18 @@ require "nvchad.autocmds"
 vim.schedule(function()
   require "mappings"
 end)
+
+require("mason").setup()
+require("mason-lspconfig").setup {
+  ensure_installed = {
+    "lua_ls",
+    "html",
+    "cssls",
+    "clangd",
+    "pyright",
+    "texlab",
+  },
+}
 
 vim.api.nvim_create_user_command("FormatDisable", function(args)
   if args.bang then
