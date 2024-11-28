@@ -46,4 +46,27 @@ return {
     "github/copilot.vim",
     lazy = false,
   },
+
+  {
+    "folke/noice.nvim",
+    event = "VeryLazy",
+    opts = {
+      -- add any options here
+    },
+    dependencies = {
+      -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
+      "MunifTanjim/nui.nvim",
+      -- OPTIONAL:
+      --   `nvim-notify` is only needed, if you want to use the notification view.
+      --   If not available, we use `mini` as the fallback
+      "rcarriga/nvim-notify",
+    },
+  },
+
+  -- {
+  --   "3rd/image.nvim",
+  --   build = false, -- so that it doesn't build the rock https://github.com/3rd/image.nvim/issues/91#issuecomment-2453430239
+  --   opts = { processor = "magick_cli" },
+  -- },
+  { "glacambre/firenvim", build = ":call firenvim#install(0)", lazy = false },
 }
