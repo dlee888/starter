@@ -15,4 +15,8 @@ cmp.setup {
   },
 }
 
-vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })
+map("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })
+
+map("n", "<leader><leader>", function()
+  require("notify").dismiss { silent = true, pending = true }
+end, { desc = "Dismiss notifications" })
