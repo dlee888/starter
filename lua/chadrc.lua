@@ -9,10 +9,10 @@ M.base46 = {
   theme = "onedark",
   transparency = true,
 
-  -- hl_override = {
-  -- 	Comment = { italic = true },
-  -- 	["@comment"] = { italic = true },
-  -- },
+  hl_override = {
+    Comment = { fg = "#999999" },
+    ["@comment"] = { fg = "#999999" },
+  },
 }
 
 M.nvdash = {
