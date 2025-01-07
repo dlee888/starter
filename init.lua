@@ -51,8 +51,9 @@ require("mason-lspconfig").setup {
     "html",
     "cssls",
     "clangd",
-    "pyright",
+    "basedpyright",
     "texlab",
+    "ruff",
   },
 }
 
